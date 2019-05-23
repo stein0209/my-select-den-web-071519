@@ -1,3 +1,7 @@
 def my_select(collection)
- # your code here!
+    if collection.length < 1
+        collection
+    else
+        collection.select {|i| i.even?}
+    end
 end
